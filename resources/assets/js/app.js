@@ -16,6 +16,7 @@ window.Vue = require('vue');
  */
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.component('manage-projects', require('./components/manage-projects.vue'));
 
 const app = new Vue({
     el: '#app'
