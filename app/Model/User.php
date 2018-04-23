@@ -32,4 +32,8 @@ class User extends Authenticatable
 	public function profile(){
 		return $this->hasOne('App\Model\Profile');
 	}
+
+	public function projects(){
+		return $this->hasMany(Project::class);
+	}
 }
