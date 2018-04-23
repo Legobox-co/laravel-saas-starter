@@ -158,8 +158,12 @@ return [
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
-
+		App\Providers\RouteServiceProvider::class,
+		
+		// Installed provideres
+		Laravel\Cashier\CashierServiceProvider::class,
+		Collective\Remote\RemoteServiceProvider::class,
+		JD\Cloudder\CloudderServiceProvider::class,
     ],
 
     /*
@@ -207,8 +211,11 @@ return [
         'Storage' => Illuminate\Support\Facades\Storage::class,
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
-        'View' => Illuminate\Support\Facades\View::class,
-
+		'View' => Illuminate\Support\Facades\View::class,
+		
+		//installed facades
+		 'SSH' => Collective\Remote\RemoteFacade::class,
+		 'Cloudder' => JD\Cloudder\Facades\Cloudder::class,
     ],
 
 ];
