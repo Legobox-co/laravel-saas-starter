@@ -4,9 +4,10 @@ namespace App\Model;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Tymon\JWTAuth\Contracts\JWTSubject;
 // use Laravel\Cashier\Billable;
 
-class User extends Authenticatable
+class User extends Authenticatable implements JWTSubject
 {
 	use Notifiable ;  
 	// use Billable;
@@ -35,5 +36,13 @@ class User extends Authenticatable
 
 	public function projects(){
 		return $this->hasMany(Project::class);
+	}
+
+	public function getJWTIdentifier(){
+		return $this->getKey();
+	}
+
+	public function getJWTCustomClaims(){
+		return [];
 	}
 }

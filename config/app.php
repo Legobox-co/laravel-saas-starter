@@ -52,7 +52,10 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+	'url' => env('APP_URL', 'http://localhost'),
+	
+	// domain 
+	'domain' => env('APP_DOMAIN'),
 
     /*
     |--------------------------------------------------------------------------
@@ -156,7 +159,7 @@ return [
          */
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
+        App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
 		App\Providers\RouteServiceProvider::class,
 		
@@ -164,6 +167,7 @@ return [
 		Laravel\Cashier\CashierServiceProvider::class,
 		Collective\Remote\RemoteServiceProvider::class,
 		JD\Cloudder\CloudderServiceProvider::class,
+		Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
     ],
 
     /*
