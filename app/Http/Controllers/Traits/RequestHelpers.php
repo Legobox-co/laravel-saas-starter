@@ -1,4 +1,4 @@
-<?
+<?php
 namespace App\Http\Controllers\Traits;
 
 use App\Http\Controllers\Traits\Responders;

@@ -62,7 +62,7 @@ class ProjectController extends SuperController
 			'branch' => $request->branch
 		]);
 		if($project){
-			return $this->done($project, 'Project Created Successfully');
+			return $this->done($project, 'project created successfully');
 		}
 		return $this->error();
     }
@@ -98,7 +98,10 @@ class ProjectController extends SuperController
      */
     public function update(Request $request, Project $project)
     {
-        //
+		//use the data to update the resource
+		$project->update($request->all);
+		$project->save();
+		return $this->done($project, 'project updated successfully');
     }
 
     /**
@@ -109,6 +112,8 @@ class ProjectController extends SuperController
      */
     public function destroy(Project $project)
     {
-        //
+		$deleted = $project->toArray();
+		$project->destroy();
+		return $this->done($deleted, 'project deleted successfully');
     }
 }
