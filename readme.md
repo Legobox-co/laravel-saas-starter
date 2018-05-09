@@ -1,6 +1,8 @@
 # Laravel Sass Starter
 > a quick way to start your saas applications
 
+> Current in development - pre-release stages
+
 ## Introduction
 The laravel-saas -starter project is a quick way to boostrap and quickly start your saas apps its endeavours to make several of the core features you need available by default so you don't have to always re-make the wheel.
 
