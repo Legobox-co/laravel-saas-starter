@@ -14,11 +14,7 @@ class ProjectController extends SuperController
 	// create your validation rules 
 	public function rules(){
 		return [
-			'name' => 'required',
-			'repository' => 'required|unique:projects|string',
-			'type' => 'required|exists:project_types,name',
-			'repository_type' => 'required|exists:repository_types,name',
-			'branch' => 'required'
+			'name' => 'required'
 		];
 	}
     /**
@@ -56,10 +52,6 @@ class ProjectController extends SuperController
 		$project = $this->newModel([
 			'name' => $request->name,
 			'user_id' => Auth::user()->id,
-			'repository' => $request->repository,
-			'type' => $request->repository,
-			'repository_type' => $request->repository_type,
-			'branch' => $request->branch
 		]);
 		if($project){
 			return $this->done($project, 'project created successfully');

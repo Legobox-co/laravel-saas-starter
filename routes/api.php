@@ -18,11 +18,6 @@ Route::group(['prefix'=>'auth'], function (){
 
 Route::middleware('auth:api')->get('/user', 'Auth\LoginController@getCurrentUser');
 
-Route::group(['prefix'=>'projects/{project}'], function(){
-	// POST api/projects/servers -- create
-	// PUT/DELETE api/projects/servers{server} -- updates and destroy
-	Route::resource('servers','ServerController');	
-});
 // POST api/projects/ -- create
 // PUT/DELETE api/projects/{project} -- updates and destroy
 Route::resource('projects', 'ProjectController');
