@@ -15,7 +15,7 @@ Some of these include
 
 
 ## Progress
-At the moment the boilerplate is at its initial development state. we follow the ![semantic versioning system](https://semver.org) versioning system, at the moment the library is at its version 0.0.0, meaning its still in development.
+At the moment the boilerplate is at its initial development state. we follow the ![semantic versioning system](https://semver.org) versioning system, at the moment the library is at its version 0.1.0, meaning its still in development.
 
 ## Contributions
 Due to current contraints at the moment the project is not open to contributions until the first release, I do hope to be able to initialize it then and make it a community favourite if possible.
