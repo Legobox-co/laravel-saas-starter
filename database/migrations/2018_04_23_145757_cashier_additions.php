@@ -7,7 +7,7 @@ use Illuminate\Database\Migrations\Migration;
 class CashierAdditions extends Migration
 {
     /**
-     * Run the migrations.
+     * Run the migrations -  Setting up for stripe
      *
      * @return void
      */

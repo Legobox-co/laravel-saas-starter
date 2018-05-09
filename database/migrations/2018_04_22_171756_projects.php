@@ -14,12 +14,9 @@ class Projects extends Migration
     public function up()
     {
         Schema::create('projects',function(Blueprint $table){
+			// add fields to these as much as they suit your purpose
 			$table->increments('id');
 			$table->string('name');
-			$table->string('repository');
-			$table->unsignedInteger('type');
-			$table->unsignedInteger('repository_type');
-			$table->string('branch');
 			$table->unsignedInteger('user_id');
 			$table->timestamps();
 		});
