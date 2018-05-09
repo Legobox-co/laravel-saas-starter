@@ -11,8 +11,7 @@
 |
 */
 
-Route::redirect('/','/api',301);
 
-// Auth::routes();
-
-// Route::get('/home', 'HomeController@index')->name('home');
+Auth::routes();
+Route::get('/','SuperController@welcome');
+Route::get('/home', 'HomeController@index')->name('home');

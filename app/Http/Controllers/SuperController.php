@@ -13,4 +13,9 @@ class SuperController extends Controller
 	public function model(){
 		return $this->model;
 	}
+
+	public function welcome()
+    {
+        return view('welcome');
+	}
 }

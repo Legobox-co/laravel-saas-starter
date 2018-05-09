@@ -13,16 +13,10 @@ use Illuminate\Http\Request;
 |
 */
 Route::group(['prefix'=>'auth'], function (){
-	// Route::post('/login', 'LoginController@login')
-	// Route::post('/logout', 'LoginController@logout')
-	// Route::post('/refresh', )
-	// Route::post('/me', )
 	Auth::routes();
 });
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::middleware('auth:api')->get('/user', 'Auth\LoginController@getCurrentUser');
 
 Route::group(['prefix'=>'projects/{project}'], function(){
 	// POST api/projects/servers -- create

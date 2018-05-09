@@ -79,16 +79,13 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Spectre
+                   Laravel Sass Starter 
                 </div>
-                <p>Zero downtime deployment for your applications</p>
+                <p>A quick way to get your saas apps up and running</p>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="https://github.com/legobox-co/laravel-saas-starter">GitHub</a>
                 </div>
             </div>
         </div>
